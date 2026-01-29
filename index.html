@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Study and Pass PH</title>
+  <meta name="description" content="Study and Pass PH: Bar Exam, PRC Board Exam, and Civil Service Exam (CSE) results, reviewers, and templates in the Philippines." />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6699684147837712" crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-6699684147837712">
+
+  <!-- Page-only styles (safe; you can move to style.css later) -->
+  <style>
+    /* --- PRC-style enhancements (light + clean + official) --- */
+    .topbar{
+      background: linear-gradient(90deg, rgba(185,28,28,.10), rgba(37,99,235,.10));
+      border-bottom:1px solid rgba(0,0,0,.08);
+      font-size:13px;
+    }
+    .topbar .inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 0; gap:12px; flex-wrap:wrap;
+    }
+    .topbar .muted{color:rgba(0,0,0,.70)}
+    .topbar a{color:rgba(0,0,0,.70); text-decoration:none}
+    .topbar a:hover{color:#2563eb; text-decoration:underline}
+
+    .brand{gap:12px}
+    .brand-logo{width:40px;height:40px;object-fit:contain}
+    .brand-text{font-size:18px;font-weight:900;letter-spacing:.2px}
+
+    .hero{
+      background:
+        radial-gradient(circle at 15% 15%, rgba(37,99,235,.10), transparent 45%),
+        radial-gradient(circle at 85% 35%, rgba(185,28,28,.09), transparent 48%);
+    }
+    .hero-grid{align-items:stretch}
+    .hero h1{font-size:clamp(30px, 3.8vw, 46px)}
+    .lead{max-width:62ch}
+
+    .badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(0,0,0,.10);
+      background:rgba(255,255,255,.72);
+      color:rgba(0,0,0,.72);
+    }
+
+    .panel{
+      border:1px solid rgba(0,0,0,.10);
+      border-radius:18px;
+      background:rgba(255,255,255,.78);
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+      padding:16px;
+    }
+
+    .hero-logo-wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+    .hero-logo{width:min(220px, 70%);height:auto;object-fit:contain;margin:6px auto 10px}
+    .hero-logo-title{font-weight:900;font-size:18px}
+    .hero-logo-sub{color:rgba(0,0,0,.70);font-size:13px;line-height:1.55;max-width:36ch;margin-top:6px}
+
+    .quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .quick-grid .linkcard{
+      background:rgba(255,255,255,.75);
+      border:1px solid rgba(0,0,0,.10);
+    }
+    .quick-grid .linkcard:hover{border-color:rgba(37,99,235,.40); transform: translateY(-1px)}
+    .quick-grid .linkcard strong{color:rgba(0,0,0,.90)}
+    .quick-grid .linkcard span{color:rgba(0,0,0,.65)}
+
+    .notice{
+      border:1px solid rgba(37,99,235,.18);
+      background:rgba(37,99,235,.06);
+      border-radius:16px;
+      padding:14px 16px;
+      color:rgba(0,0,0,.78);
+    }
+    .notice strong{color:rgba(0,0,0,.90)}
+
+    .portal-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+    @media (max-width: 900px){ .portal-grid{grid-template-columns:1fr} }
+
+    .portal-card{
+      border:1px solid rgba(0,0,0,.10);
+      background:rgba(255,255,255,.80);
+      border-radius:18px;
+      padding:14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.06);
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .portal-card h3{font-size:16px}
+    .portal-k{font-size:12px;color:rgba(0,0,0,.65)}
+    .portal-v{font-size:22px;font-weight:900;letter-spacing:.2px}
+    .portal-card p{color:rgba(0,0,0,.70);line-height:1.7}
+
+    .updates{
+      border:1px solid rgba(0,0,0,.10);
+      background:rgba(255,255,255,.80);
+      border-radius:18px;
+      padding:14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.06);
+    }
+    .updates ul{margin-left:18px;line-height:1.9}
+    .updates li{color:rgba(0,0,0,.72)}
+    .updates a{color:rgba(0,0,0,.78); text-decoration:none}
+    .updates a:hover{color:#2563eb; text-decoration:underline}
+
+    .steps-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:12px;
+    }
+    @media (max-width: 900px){ .steps-grid{grid-template-columns:1fr} }
+
+    .step{
+      border:1px solid rgba(0,0,0,.10);
+      background:rgba(255,255,255,.78);
+      border-radius:18px;
+      padding:14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.06);
+    }
+    .step .num{
+      width:34px;height:34px;border-radius:999px;
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;
+      background:rgba(185,28,28,.10);
+      border:1px solid rgba(185,28,28,.18);
+      color:#b91c1c;
+      margin-bottom:10px;
+    }
+
+    /* Make hover blue for all links/buttons (your request) */
+    a:hover{color:#2563eb !important}
+    .btn:hover{border-color:rgba(37,99,235,.45)}
+    .btn.primary:hover{filter:brightness(1.03)}
+  </style>
+</head>
+
+<body>
+
+  <!-- Top info bar (PRC-like) -->
+  <div class="topbar">
+    <div class="container inner">
+      <div class="muted">
+        <strong>Study &amp; Pass PH</strong> • Exam results portal • Updated: <span id="liveDate">—</span>
+      </div>
+      <div class="muted">
+        Need a missing page? <a href="contact.html">Report an update</a> • <a href="editorial-policy.html">Editorial Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Study and Pass PH Home">
+        <img class="brand-logo"
+             src="logo/Study%20%26%20Pass%20PH%20logo%20design.png"
+             alt="Study and Pass PH logo" />
+        <span class="brand-text">Study and Pass PH</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="bar-exam.html">Bar Exam</a>
+        <a href="board-exam.html">Board Exam</a>
+        <a href="cse-exam.html">CSE Exam</a>
+        <a href="templates-hub.html">Templates Hub</a>
+        <a href="reviewers.html">Reviewers</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Philippine Exam Results &amp; Review Portal</h1>
+          <p class="lead">
+            Study and Pass PH is a centralized reference for Philippine exam takers—<strong>Bar Exam</strong>,
+            <strong>PRC Board Exams</strong>, and the <strong>Civil Service Exam (CSE)</strong>.
+            Browse results by year, access verified source links, and download PDFs when available.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="exam-results.html">View Exam Results</a>
+            <a class="btn ghost" href="reviewers.html">Browse Reviewers</a>
+            <a class="btn ghost" href="templates-hub.html">Get Templates</a>
+          </div>
+
+          <div class="badge-row">
+            <span class="badge">Official-first references</span>
+            <span class="badge">Year-by-year results</span>
+            <span class="badge">Mobile-friendly pages</span>
+            <span class="badge">PDF viewing &amp; download</span>
+          </div>
+
+          <div class="notice" style="margin-top:14px;">
+            <strong>Important:</strong> This is an independent informational site. Always verify details using the official source links on each results page.
+          </div>
+        </div>
+
+        <!-- Right panel -->
+        <div class="panel">
+          <div class="hero-logo-wrap">
+            <img class="hero-logo"
+                 src="logo/Study%20%26%20Pass%20PH%20logo%20design.png"
+                 alt="Study and Pass PH logo large" />
+            <div class="hero-logo-title">Study &amp; Pass PH</div>
+            <div class="hero-logo-sub">
+              Organized summaries • Verified source links • Exam-result pages built for fast search
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid rgba(0,0,0,.08);margin:14px 0;">
+
+          <h3 style="margin-bottom:10px;">Quick Access</h3>
+          <div class="quick-grid">
+            <a class="linkcard" href="bar-exam.html">
+              <strong>Bar Exam</strong>
+              <span>Results • Topnotchers • PDFs</span>
+            </a>
+            <a class="linkcard" href="board-exam.html">
+              <strong>Board Exams</strong>
+              <span>By profession • By year</span>
+            </a>
+            <a class="linkcard" href="cse-exam.html">
+              <strong>CSE Exam</strong>
+              <span>Results • Schedules • Guides</span>
+            </a>
+            <a class="linkcard" href="templates-hub.html">
+              <strong>Templates Hub</strong>
+              <span>Legal • Job • School</span>
+            </a>
+          </div>
+
+          <div class="meta-row" style="margin-top:12px;">
+            <span class="meta-chip">Organized</span>
+            <span class="meta-chip">Source-linked</span>
+            <span class="meta-chip">Fast browsing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRC-style portal overview (fills your empty space professionally) -->
+    <section class="container section">
+      <h2>Exam Portal Overview</h2>
+      <div class="portal-grid">
+
+        <div class="portal-card">
+          <div class="portal-k">Bar Examination</div>
+          <div class="portal-v">2000–2026</div>
+          <p>
+            Browse Bar Exam results by year, view topnotcher pages, and access official Supreme Court references when available.
+          </p>
+          <div class="cta-row">
+            <a class="btn small primary" href="bar-exam-results.html">Bar Results</a>
+            <a class="btn small ghost" href="bar-exam.html">Bar Hub</a>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-k">PRC Board Examinations</div>
+          <div class="portal-v">40+ Exams</div>
+          <p>
+            Results organized by profession and year. Each page is structured for quick verification and easy PDF viewing.
+          </p>
+          <div class="cta-row">
+            <a class="btn small primary" href="board-exam-results.html">Board Results</a>
+            <a class="btn small ghost" href="board-exam.html">Board Hub</a>
+          </div>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-k">Civil Service Exam (CSE)</div>
+          <div class="portal-v">Latest + Archives</div>
+          <p>
+            Find CSE results, schedules, and guides. Use filters to locate the correct year and exam type faster.
+          </p>
+          <div class="cta-row">
+            <a class="btn small primary" href="cse-exam-results.html">CSE Results</a>
+            <a class="btn small ghost" href="cse-exam.html">CSE Hub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Latest updates (PRC-style bulletin) -->
+    <section class="container section">
+      <div class="updates">
+        <h2 style="margin-bottom:10px;">Latest Exam Updates</h2>
+        <p class="muted" style="margin-bottom:10px;">
+          This section highlights recent result pages and updates. If a link is outdated, please report it.
+        </p>
+        <ul>
+          <li><strong>Bar Exam:</strong> <a href="bar-results-2025.html">Bar Exam Results 2025</a> • <a href="bar-exam-topnotchers-2025.html">Topnotchers 2025</a></li>
+          <li><strong>PRC Board Exams:</strong> <a href="board-exam-results.html">Browse Board Exam Results</a> by profession and year</li>
+          <li><strong>CSE:</strong> <a href="cse-exam-results.html">Browse CSE Exam Results</a> • schedules and guides</li>
+          <li><strong>Reviewers:</strong> <a href="reviewers.html">Open Reviewers Library</a> for Bar / Board / CSE</li>
+          <li><strong>Templates:</strong> <a href="templates-hub.html">Templates Hub</a> for legal, job, and school needs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- AD -->
+    <section class="container section">
+      <div class="ad-box">
+        <div class="ad-title">Advertisement</div>
+        <div class="ad-placeholder">Ad Slot (Responsive)</div>
+      </div>
+    </section>
+
+    <!-- Categories (kept from your original) -->
+    <section class="container section">
+      <h2>Categories</h2>
+
+      <div class="cards3">
+        <article class="cat-card">
+          <h3>Exam Results</h3>
+          <p class="muted" style="margin-top:6px;">Browse results pages with summaries, source links, and PDF viewers.</p>
+          <ul>
+            <li><a href="bar-exam-results.html">Bar Exam Results</a></li>
+            <li><a href="board-exam-results.html">Board Exam Results</a></li>
+            <li><a href="cse-exam-results.html">CSE Exam Results</a></li>
+          </ul>
+        </article>
+
+        <article class="cat-card">
+          <h3>Reviewers</h3>
+          <p class="muted" style="margin-top:6px;">Study materials and topic-based guides for exam preparation.</p>
+          <ul>
+            <li><a href="bar-reviewer.html">Bar Reviewer</a></li>
+            <li><a href="board-reviewer.html">Board Reviewer</a></li>
+            <li><a href="cse-reviewer.html">CSE Reviewer</a></li>
+          </ul>
+        </article>
+
+        <article class="cat-card">
+          <h3>Templates Hub</h3>
+          <p class="muted" style="margin-top:6px;">Practical, ready-to-edit templates for work and school needs.</p>
+          <ul>
+            <li><a href="legal-templates.html">Legal Templates</a></li>
+            <li><a href="job-templates.html">Job Templates</a></li>
+            <li><a href="school-templates.html">School Templates</a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- How to use (clean + official) -->
+    <section class="container section">
+      <h2>How to use this site</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Choose an exam</h3>
+          <p class="muted">Start with Bar Exam, PRC Board Exams, or CSE to browse categories.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Select a year</h3>
+          <p class="muted">Open a year page to view summaries, official links, and PDFs (if available).</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Verify official sources</h3>
+          <p class="muted">Use the official reference links included on each results page to confirm details.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="container section">
+      <div class="notice">
+        <strong>Disclaimer:</strong> Study and Pass PH is not affiliated with the Supreme Court of the Philippines,
+        the Professional Regulation Commission (PRC), or the Civil Service Commission (CSC). Official announcements and documents belong to their respective institutions.
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Study and Pass PH • Built by leiazurin</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="editorial-policy.html">Editorial Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+
+  <!-- Live date -->
+  <script>
+    (function () {
+      const el = document.getElementById("liveDate");
+      if (!el) return;
+      const d = new Date();
+      el.textContent = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+    })();
+  </script>
+
+</body>
+</html>
